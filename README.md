@@ -9,7 +9,7 @@
 AutodeskForgeDesignAutomation - 
 Asynchronous Node.js library for the Autodesk Forge Design Automation v3 implementation.
 
-- Package version: 3.0.0
+- Package version: 3.0.1
 - API version: v3
 - API documentation: 
 For more information, please visit [https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview/](https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview/)
@@ -211,11 +211,11 @@ Class | Method | HTTP request | Description
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**deleteForgeApp**](docs/AutodeskForgeDesignautomationApi.md#deleteForgeApp) | **DELETE** /v3/forgeapps/{id} | Delete all data associated with this Forge app.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**deleteServiceLimits**](docs/AutodeskForgeDesignautomationApi.md#deleteServiceLimits) | **DELETE** /v3/servicelimits/{owner} | Deletes user service limits.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**deleteWorkitem**](docs/AutodeskForgeDesignautomationApi.md#deleteWorkitem) | **DELETE** /v3/workitems/{id} | Cancels a specific WorkItem.
-*AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**geActivityVersion**](docs/AutodeskForgeDesignautomationApi.md#geActivityVersion) | **GET** /v3/activities/{id}/versions/{version} | Gets the details of the specified version of the Activity.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**getActivities**](docs/AutodeskForgeDesignautomationApi.md#getActivities) | **GET** /v3/activities | Lists all available Activities.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**getActivity**](docs/AutodeskForgeDesignautomationApi.md#getActivity) | **GET** /v3/activities/{id} | Gets the details of the specified Activity.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**getActivityAlias**](docs/AutodeskForgeDesignautomationApi.md#getActivityAlias) | **GET** /v3/activities/{id}/aliases/{aliasId} | Get alias details.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**getActivityAliases**](docs/AutodeskForgeDesignautomationApi.md#getActivityAliases) | **GET** /v3/activities/{id}/aliases | Lists all aliases for the specified Activity.
+*AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**getActivityVersion**](docs/AutodeskForgeDesignautomationApi.md#getActivityVersion) | **GET** /v3/activities/{id}/versions/{version} | Gets the details of the specified version of the Activity.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**getActivityVersions**](docs/AutodeskForgeDesignautomationApi.md#getActivityVersions) | **GET** /v3/activities/{id}/versions | Lists all versions of the specified Activity.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**getAppBundle**](docs/AutodeskForgeDesignautomationApi.md#getAppBundle) | **GET** /v3/appbundles/{id} | Gets the details of the specified AppBundle.
 *AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi* | [**getAppBundleAlias**](docs/AutodeskForgeDesignautomationApi.md#getAppBundleAlias) | **GET** /v3/appbundles/{id}/aliases/{aliasId} | Get alias details.

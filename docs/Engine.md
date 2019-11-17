@@ -1,12 +1,18 @@
 # Autodeskforgedesignautomation.Engine
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**_package** | **String** | The URL that points to the zip package for the AppBundle. | [optional] 
-**productVersion** | **String** | The product version of the Engine (the version of the binary that will be uploaded). | 
-**description** | **String** | Human readable description of the object. | [optional] 
-**version** | **Number** |  | [optional] 
-**id** | **String** |  | [optional] 
+## Enum
+
+
+* `api` (value: `"api"`)
+
+* `AutoCAD` (value: `"AutoCAD"`)
+
+* `Revit` (value: `"Revit"`)
+
+* `Inventor` (value: `"Inventor"`)
+
+* `3dsMax` (value: `"3dsMax"`)
+
+* `Test` (value: `"Test"`)
 
 

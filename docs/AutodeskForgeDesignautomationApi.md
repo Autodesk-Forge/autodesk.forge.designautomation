@@ -22,11 +22,11 @@ Method | HTTP request | Description
 [**deleteForgeApp**](AutodeskForgeDesignautomationApi.md#deleteForgeApp) | **DELETE** /v3/forgeapps/{id} | Delete all data associated with this Forge app.
 [**deleteServiceLimits**](AutodeskForgeDesignautomationApi.md#deleteServiceLimits) | **DELETE** /v3/servicelimits/{owner} | Deletes user service limits.
 [**deleteWorkitem**](AutodeskForgeDesignautomationApi.md#deleteWorkitem) | **DELETE** /v3/workitems/{id} | Cancels a specific WorkItem.
-[**geActivityVersion**](AutodeskForgeDesignautomationApi.md#geActivityVersion) | **GET** /v3/activities/{id}/versions/{version} | Gets the details of the specified version of the Activity.
 [**getActivities**](AutodeskForgeDesignautomationApi.md#getActivities) | **GET** /v3/activities | Lists all available Activities.
 [**getActivity**](AutodeskForgeDesignautomationApi.md#getActivity) | **GET** /v3/activities/{id} | Gets the details of the specified Activity.
 [**getActivityAlias**](AutodeskForgeDesignautomationApi.md#getActivityAlias) | **GET** /v3/activities/{id}/aliases/{aliasId} | Get alias details.
 [**getActivityAliases**](AutodeskForgeDesignautomationApi.md#getActivityAliases) | **GET** /v3/activities/{id}/aliases | Lists all aliases for the specified Activity.
+[**getActivityVersion**](AutodeskForgeDesignautomationApi.md#getActivityVersion) | **GET** /v3/activities/{id}/versions/{version} | Gets the details of the specified version of the Activity.
 [**getActivityVersions**](AutodeskForgeDesignautomationApi.md#getActivityVersions) | **GET** /v3/activities/{id}/versions | Lists all versions of the specified Activity.
 [**getAppBundle**](AutodeskForgeDesignautomationApi.md#getAppBundle) | **GET** /v3/appbundles/{id} | Gets the details of the specified AppBundle.
 [**getAppBundleAlias**](AutodeskForgeDesignautomationApi.md#getAppBundleAlias) | **GET** /v3/appbundles/{id}/aliases/{aliasId} | Get alias details.
@@ -947,57 +947,6 @@ null (empty response body)
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="geActivityVersion"></a>
-# **geActivityVersion**
-> Activity geActivityVersion(id, version)
-
-Gets the details of the specified version of the Activity.
-
-Gets the details of the specified version of the Activity.
-
-### Example
-```javascript es6
-import Autodeskforgedesignautomation from 'autodeskforgedesignautomation';
-let defaultClient = Autodeskforgedesignautomation.ApiClient.instance;
-
-// Configure OAuth2 access token for authorization: 2-legged
-let oauth = defaultClient.authManager.authentications['2-legged'];
-oauth.accessToken = 'YOUR ACCESS TOKEN';
-
-let apiInstance = new Autodeskforgedesignautomation.AutodeskForgeDesignautomationApi();
-
-let id = "id_example"; // String | Name of Activity (unqualified).
-
-let version = 56; // Number | Version to retrieve (integer).
-
-apiInstance.geActivityVersion(id, version).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **String**| Name of Activity (unqualified). | 
- **version** | **Number**| Version to retrieve (integer). | 
-
-### Return type
-
-[**Activity**](Activity.md)
-
-### Authorization
-
-[2-legged](../README.md#2-legged)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
 <a name="getActivities"></a>
 # **getActivities**
 > Page5bString5d getActivities(opts)
@@ -1188,6 +1137,57 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Page5bAlias5d**](Page5bAlias5d.md)
+
+### Authorization
+
+[2-legged](../README.md#2-legged)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="getActivityVersion"></a>
+# **getActivityVersion**
+> Activity getActivityVersion(id, version)
+
+Gets the details of the specified version of the Activity.
+
+Gets the details of the specified version of the Activity.
+
+### Example
+```javascript es6
+import Autodeskforgedesignautomation from 'autodeskforgedesignautomation';
+let defaultClient = Autodeskforgedesignautomation.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: 2-legged
+let oauth = defaultClient.authManager.authentications['2-legged'];
+oauth.accessToken = 'YOUR ACCESS TOKEN';
+
+let apiInstance = new Autodeskforgedesignautomation.AutodeskForgeDesignautomationApi();
+
+let id = "id_example"; // String | Name of Activity (unqualified).
+
+let version = 56; // Number | Version to retrieve (integer).
+
+apiInstance.getActivityVersion(id, version).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| Name of Activity (unqualified). | 
+ **version** | **Number**| Version to retrieve (integer). | 
+
+### Return type
+
+[**Activity**](Activity.md)
 
 ### Authorization
 
@@ -1858,11 +1858,6 @@ Gets the health status by Engine or for all Engines (Inventor, AutoCAD ...).
 ### Example
 ```javascript es6
 import Autodeskforgedesignautomation from 'autodeskforgedesignautomation';
-let defaultClient = Autodeskforgedesignautomation.ApiClient.instance;
-
-// Configure OAuth2 access token for authorization: 2-legged
-let oauth = defaultClient.authManager.authentications['2-legged'];
-oauth.accessToken = 'YOUR ACCESS TOKEN';
 
 let apiInstance = new Autodeskforgedesignautomation.AutodeskForgeDesignautomationApi();
 
@@ -1888,7 +1883,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[2-legged](../README.md#2-legged)
+No authorization required
 
 ### HTTP request headers
 
