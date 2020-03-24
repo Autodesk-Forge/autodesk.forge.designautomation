@@ -1,7 +1,7 @@
 # autodesk.forge.designautomation
 
 [![Design-Automation](https://img.shields.io/badge/Design%20Automation-v3-green.svg)](http://developer.autodesk.com/)
-![SDK](https://img.shields.io/badge/SDK-3.0.0-lightgree.svg)
+![SDK](https://img.shields.io/badge/SDK-3.0.2-lightgree.svg)
 [![Node.js](https://img.shields.io/badge/Node.js-6.3.1-blue.svg)](https://nodejs.org/)
  
 ## Overview
@@ -9,7 +9,7 @@
 AutodeskForgeDesignAutomation - 
 Asynchronous Node.js library for the Autodesk Forge Design Automation v3 implementation.
 
-- Package version: 3.0.1
+- Package version: 3.0.2
 - API version: v3
 - API documentation: 
 For more information, please visit [https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview/](https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview/)
@@ -122,13 +122,13 @@ Please follow the [installation](#installation) instruction and execute the foll
 ```javascript
 let AutodeskForgeDesignAutomation = require('autodesk.forge.designautomation');
 
-let defaultClient = AutodeskForgeDesignAutomation.ApiClient.instance;
+let defaultClient = AutodeskForgeDesignAutomation.AutodeskForgeDesignAutomationClient.instance;
 
 // Configure OAuth2 access token for authorization: 2-legged
 let oauth = defaultClient.authManager.authentications['2-legged'];
 oauth.accessToken = "YOUR ACCESS TOKEN";
 
-// You can pass fetchToken and refreshToken to manage the token
+// And/Or you can pass fetchToken and refreshToken to manage the token
 oauth.fetchToken = function() { return Promise.resolve({accessToken: "token", expiresIn: 300000}) }
 oauth.refreshToken = function() { return Promise.resolve({accessToken: "token", expiresIn: 300000}) }
 
@@ -169,7 +169,7 @@ let client = new AutodeskForgeDesignAutomation.AutodeskForgeDesignAutomationClie
 let oauth = client.authManager.authentications['2-legged'];
 oauth.accessToken = "YOUR ACCESS TOKEN";
 
-// You can pass fetchToken and refreshToken to manage the token
+// And/Or you can pass fetchToken and refreshToken to manage the token
 oauth.fetchToken = function() { return Promise.resolve({accessToken: "token", expiresIn: 300000}) }
 oauth.refreshToken = function() { return Promise.resolve({accessToken: "token", expiresIn: 300000}) }
 
