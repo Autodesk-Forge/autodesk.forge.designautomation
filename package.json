@@ -21,7 +21,7 @@
   },
   "main": "bundle.js",
   "publishConfig": {
-    "registry": "https://art-bobcat.autodesk.com/artifactory/api/npm/autodesk-npm",
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "dependencies": {
