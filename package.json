@@ -1,6 +1,6 @@
 {
   "name": "autodesk.forge.designautomation",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Client sdk for Forge DesignAutomation API",
   "homepage": "https://forge.autodesk.com/",
   "repository": {
@@ -21,7 +21,7 @@
   },
   "main": "bundle.js",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
+    "registry": "https://art-bobcat.autodesk.com/artifactory/api/npm/autodesk-npm",
     "access": "public"
   },
   "dependencies": {

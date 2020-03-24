@@ -1,7 +1,7 @@
 # autodesk.forge.designautomation
 
 [![Design-Automation](https://img.shields.io/badge/Design%20Automation-v3-green.svg)](http://developer.autodesk.com/)
-![SDK](https://img.shields.io/badge/SDK-3.0.2-lightgree.svg)
+![SDK](https://img.shields.io/badge/SDK-3.0.3-lightgree.svg)
 [![Node.js](https://img.shields.io/badge/Node.js-6.3.1-blue.svg)](https://nodejs.org/)
  
 ## Overview
@@ -9,7 +9,7 @@
 AutodeskForgeDesignAutomation - 
 Asynchronous Node.js library for the Autodesk Forge Design Automation v3 implementation.
 
-- Package version: 3.0.2
+- Package version: 3.0.3
 - API version: v3
 - API documentation: 
 For more information, please visit [https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview/](https://forge.autodesk.com/en/docs/design-automation/v3/developers_guide/overview/)
