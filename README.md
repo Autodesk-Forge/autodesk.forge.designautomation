@@ -132,9 +132,9 @@ oauth.accessToken = "YOUR ACCESS TOKEN";
 oauth.fetchToken = function() { return Promise.resolve({accessToken: "token", expiresIn: 300000}) }
 oauth.refreshToken = function() { return Promise.resolve({accessToken: "token", expiresIn: 300000}) }
 
-let api = new AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi()
+let api = new AutodeskForgeDesignAutomation.AutodeskForgeDesignAutomationApi()
 
-let item = new Autodeskforgedesignautomation.Activity(); // {Activity} 
+let item = new AutodeskForgeDesignAutomation.Activity(); // {Activity} 
 
 api.createActivity(item).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
@@ -174,9 +174,9 @@ oauth.fetchToken = function() { return Promise.resolve({accessToken: "token", ex
 oauth.refreshToken = function() { return Promise.resolve({accessToken: "token", expiresIn: 300000}) }
 
 
-let api = new AutodeskForgeDesignAutomation.AutodeskForgeDesignautomationApi(client)
+let api = new AutodeskForgeDesignAutomation.AutodeskForgeDesignAutomationApi(client)
 
-let item = new Autodeskforgedesignautomation.Activity(); // {Activity} 
+let item = new AutodeskForgeDesignAutomation.Activity(); // {Activity} 
 
 api.createActivity(item).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
