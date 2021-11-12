@@ -20,6 +20,7 @@
     "url": "https://forge.autodesk.com"
   },
   "main": "bundle.js",
+  "types": "index.d.ts",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
