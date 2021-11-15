@@ -1,6 +1,6 @@
 {
   "name": "autodesk.forge.designautomation",
-  "version": "3.0.3",
+  "version": "3.0.5",
   "description": "Client sdk for Forge DesignAutomation API",
   "homepage": "https://forge.autodesk.com/",
   "repository": {
@@ -39,7 +39,8 @@
     "bundle.js.map",
     "README.md",
     "LICENSE",
-    "package.json"
+    "package.json",
+    "index.d.ts"
   ],
   "directories": {
     "docs": "./docs"
